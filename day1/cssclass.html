@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Position Examples</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+.container {
+    border: 2px solid #ff6f61;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;  /* this makes it a positioned parent for the absolute element */
+    background: #ff9671;
+    color: #fff;
+}
+.static-box {
+    position: static;
+    background: #ffcc5b;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background: #ffcc5b;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.absolute-box {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #ffcc5b;
+    padding: 10px;
+    color: #000;
+}
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ff6f61;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Position Examples</h1>
+
+<div class="container">
+    <div class="static-box">Static Box (default)</div>
+    <div class="relative-box">Relative Box (shifted 20px downward and 30px to the right)</div>
+    <div class="absolute-box">Absolute Box (attached to bottom-right of parent)</div>
+</div>
+
+<div class="fixed-box">
+    Fixed Box (always visible at bottom left, even when you scroll!)
+</div>
+
+<p>Scroll this page to see the fixed box stay in place.</p>
+
+</body>
+</html>

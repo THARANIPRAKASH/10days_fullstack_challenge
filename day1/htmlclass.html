@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Movies with Radio, Checkbox and Table</title>
+<meta charset="UTF-8">
+<title>Movies</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        color: #333;
+    }
+    h1 {
+        color: #ff6f61;
+    }
+    h2 {
+        color: #ff9671;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ff6f61;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    input[type="radio"], input[type="checkbox"] {
+        margin-bottom: 10px;
+    }
+    img {
+        margin: 10px;
+        border: 5px solid #ff6f61;
+        border-radius: 10px;
+    }
+    .movie-gallery {
+        display: flex;
+        gap: 10px;
+    }
+</style>
 </head>
 <body>
     <h1>Movies</h1>
@@ -45,7 +82,7 @@
 
     <div>
         <h2>Movies Summary (Table)</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>Movie</th>
                 <th>Release Year</th>
@@ -81,11 +118,14 @@
 
     <div>
         <h2>Movies Gallery (Images)</h2>
-        <img src="https://m.media-amazon.com/images/M/MV5BMTY2NjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Avengers" width="100">
-        <img src="https://m.media-amazon.com/images/M/MV5BMjNjNjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="The Lion King" width="100">
-        <img src="https://m.media-amazon.com/images/M/MV5BMTE2NjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Jurassic Park" width="100">
-        <img src="https://m.media-amazon.com/images/M/MV5BMjNjNjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Harry Potter" width="100">
-        <img src="https://m.media-amazon.com/images/M/MV5BMjNjNjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Toy Story" width="100">
+        <div class="movie-gallery">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY2NjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Avengers" width="100">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjNjNjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="The Lion King" width="100">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTE2NjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Jurassic Park" width="100">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjNjNjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Harry Potter" width="100">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjNjNjQ3NjktNjFlYS00NjA1LThmNjctNjNjNjNjNjNjNjNjXkEyXkFqcGdeAA_.V1_SY500.jpg" alt="Toy Story" width="100">
+        </div>
     </div>
+
 </body>
 </html>

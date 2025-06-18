@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #result {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rock Paper Scissors Game</h1>
+
+  <button onclick="game('rock')">👊 Rock</button>
+  <button onclick="game('paper')">✋ Paper</button>
+  <button onclick="game('scissor')">✌ Scissor</button>
+
+  <h1 id="result">Result</h1>
+  <h2 id="computerChoice"></h2>
+
+  <script>
+    function game(user) {
+      const choices = ['rock', 'paper', 'scissor'];
+      const computer = choices[Math.floor(Math.random() * 3)];
+      let result = '';
+
+      if (user === computer) {
+        result = "It's a draw 👊";
+      } else if (
+        (user === 'rock' && computer === 'scissor') ||
+        (user === 'paper' && computer === 'rock') ||
+        (user === 'scissor' && computer === 'paper')
+      ) {
+        result = 'You won 🎉';
+      } else {
+        result = 'You lose 😢'\;
+      }
+
+      document.getElementById('result').innerText = result;
+      document.getElementById('computerChoice').innerText = Computer chose: ${computer};
+    }
+  </script>
+
+</body>
+</html>

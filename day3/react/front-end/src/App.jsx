@@ -8,7 +8,8 @@ import Navbar from './components/Navbar'
 import Form from './Pages/Hooks/Form'
 import State from './Pages/Hooks/State'
 import Effects from './Pages/Hooks/Effects'
-
+import Reducer from './Pages/Hooks/Reducer'
+import ExReducer from './Pages/Hooks/ExReducer'
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
       <Route path="/hooks/effects" element={<Effects />} />
       <Route path="/hooks/form" element={<Form />} />
       <Route path="/hooks/state" element={<State />} />
-
+      <Route path="/hooks/reducer" element={<Reducer/>}/>
+      <Route path="/hooks/ExReducer" element={<ExReducer/>}/>
     </Routes>
       
     </>

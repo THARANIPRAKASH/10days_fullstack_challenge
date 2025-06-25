@@ -30,9 +30,12 @@ import { connectDB } from './config/db.js';
 import User from './model/user.js';
 import formdata from './model/form.js';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
 const app = express();
 app.use(express.json()); // To parse JSON from request body
-app.use(cors()); // Enable CORS for all routes
+app.use(cors());
+ // Enable CORS for all routes
 connectDB();
 
 
